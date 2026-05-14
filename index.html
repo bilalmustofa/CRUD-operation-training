@@ -1,14 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CRUD Operations</title>
-</head>
-<body>
-    
-    
+  </head>
+  <body>
+    <!-- ***** Header Section ****** -->
+    <header>
+      <h1>CRUD Operations</h1>
+      <p>
+        Perform Create, Read, Update, and Delete operations to manage student
+        records
+      </p>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#" onclick="showSection('addStudents')">Add Student</a></li>
+            <li><a href="#" onclick="showSection('listStudents')">List Students</a></li>
+            <li><a href="#" onclick="showSection('updateStudents')">Update Student</a></li>
+            <li><a href="#" onclick="showSection('deleteStudents')">Delete Student</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <!-- *********Add Student Section********* -->
+      <section id="addStudents" class="page-section">
+        <h2>Add Student</h2>
+        <form id="addStudentForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required />
+          <button type="submit">Add Student</button>
+        </form>
+      </section>
+
+      <!-- *********List Students Section********* -->
+      <section id="listStudents" class="page-section">
+        <h2>List Students</h2>
+        <table id="studentsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Department</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
