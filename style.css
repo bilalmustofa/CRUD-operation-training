@@ -1,0 +1,200 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Page Section Styles */
+.page-section {
+    display: none;
+}
+.page-section.active {
+    display: block;
+}
+
+/****** Navigation Styles start here ******/
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 18px;
+}
+section {
+  margin: 20px;
+}
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  margin: 0 15px;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+}
+ul li a:hover {
+    background-color: #777;
+}
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  ul {
+    gap: 5px;
+  }
+  ul li {
+    margin: 10px 0;
+  }
+    ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 12px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul li {
+    margin: 10px 0;
+  }
+    ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+/****** Navigation Styles End  ******/
+
+/****** Add Student Section Styles Start ******/
+#addStudents {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#addStudents h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#addStudents form {
+  display: flex;
+  flex-direction: column;
+}
+#addStudents form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#addStudents form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline-color: #8d8c8c;
+  font-size: 17px;
+}
+#addStudents form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:18px;
+}
+#addStudents form button:hover {
+  background-color: #555;
+}
+@media (max-width: 800px) {
+  #addStudents {
+    width: 90%;
+    padding: 15px;
+  }
+  #addStudents form input {
+    width: 100%;
+    font-size: 16px;
+  }
+  #addStudents form button {
+    font-size: 16px;
+  }
+}
+/****** Add Student Section Styles End ******/
+
+/****** List Students Section Styles Start ******/
+#listStudents {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#listStudents h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#listStudents table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#listStudents table th, #listStudents table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+#listStudents table th {
+  background-color: #f4f4f4;
+}   
+#listStudents table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#listStudents table tr:hover {
+  background-color: #f1f1f1;
+}
+@media (max-width: 800px) {
+  #listStudents {
+    width: 90%;
+    padding: 15px;
+  }
+  #listStudents table th, #listStudents table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+/****** List Students Section Styles End ******/
+
