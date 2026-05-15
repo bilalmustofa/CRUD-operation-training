@@ -12,10 +12,10 @@ body {
 
 /* Page Section Styles */
 .page-section {
-    display: none;
+  display: none;
 }
 .page-section.active {
-    display: block;
+  display: block;
 }
 
 /****** Navigation Styles start here ******/
@@ -47,15 +47,15 @@ ul li {
   margin: 0 15px;
 }
 ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    background-color: #555;
-    border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #555;
+  border-radius: 5px;
 }
 ul li a:hover {
-    background-color: #777;
+  background-color: #777;
 }
 @media (max-width: 800px) {
   header h1 {
@@ -70,10 +70,10 @@ ul li a:hover {
   ul li {
     margin: 10px 0;
   }
-    ul li a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
+  ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 }
 @media (max-width: 650px) {
   header h1 {
@@ -89,10 +89,10 @@ ul li a:hover {
   ul li {
     margin: 10px 0;
   }
-    ul li a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
+  ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 }
 /****** Navigation Styles End  ******/
 
@@ -107,8 +107,8 @@ ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #addStudents h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #addStudents form {
   display: flex;
@@ -134,7 +134,7 @@ ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  font-size:18px;
+  font-size: 18px;
 }
 #addStudents form button:hover {
   background-color: #555;
@@ -165,21 +165,22 @@ ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #listStudents h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #listStudents table {
   width: 100%;
   border-collapse: collapse;
 }
-#listStudents table th, #listStudents table td {
+#listStudents table th,
+#listStudents table td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 #listStudents table th {
   background-color: #f4f4f4;
-}   
+}
 #listStudents table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
@@ -191,10 +192,126 @@ ul li a:hover {
     width: 90%;
     padding: 15px;
   }
-  #listStudents table th, #listStudents table td {
+  #listStudents table th,
+  #listStudents table td {
     padding: 8px;
     font-size: 14px;
   }
 }
 /****** List Students Section Styles End ******/
 
+/****** Update Student Section Styles Start ******/
+#updateStudents {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#updateStudents h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#updateStudents form {
+  display: flex;
+  flex-direction: column;
+}
+#updateStudents form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#updateStudents form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline-color: #8d8c8c;
+  font-size: 17px;
+}
+#updateStudents form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+#updateStudents form button:hover {
+  background-color: #555;
+}
+@media (max-width: 800px) {
+  #updateStudents {
+    width: 90%;
+    padding: 15px;
+  }
+  #updateStudents form input {
+    width: 100%;
+    font-size: 16px;
+  }
+  #updateStudents form button {
+    font-size: 16px;
+  }
+}
+/****** Update Student Section Styles End ******/
+
+/****** Delete Student Section Styles Start ******/
+#deleteStudents {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#deleteStudents h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#deleteStudents form {
+  display: flex;
+  flex-direction: column;
+}
+#deleteStudents form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#deleteStudents form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline-color: #8d8c8c;
+  font-size: 17px;
+}
+#deleteStudents form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+#deleteStudents form button:hover {
+  background-color: #555;
+}
+@media (max-width: 800px) {
+  #deleteStudents {
+    width: 90%;
+    padding: 15px;
+  }
+  #deleteStudents form input {
+    width: 100%;
+    font-size: 16px;
+  }
+  #deleteStudents form button {
+    font-size: 16px;
+  }
+}
+/****** Delete Student Section Styles End ******/
