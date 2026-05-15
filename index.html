@@ -17,10 +17,24 @@
       <section>
         <nav>
           <ul>
-            <li><a href="#" onclick="showSection('addStudents')">Add Student</a></li>
-            <li><a href="#" onclick="showSection('listStudents')">List Students</a></li>
-            <li><a href="#" onclick="showSection('updateStudents')">Update Student</a></li>
-            <li><a href="#" onclick="showSection('deleteStudents')">Delete Student</a></li>
+            <li>
+              <a href="#" onclick="showSection('addStudents')">Add Student</a>
+            </li>
+            <li>
+              <a href="#" onclick="showSection('listStudents')"
+                >List Students</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showSection('updateStudents')"
+                >Update Student</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showSection('deleteStudents')"
+                >Delete Student</a
+              >
+            </li>
           </ul>
         </nav>
       </section>
@@ -37,6 +51,8 @@
           <input type="number" id="age" name="age" required />
           <label for="department">Department:</label>
           <input type="text" id="department" name="department" required />
+          <label for="university">University:</label>
+          <input type="text" id="university" name="university" required />
           <button type="submit">Add Student</button>
         </form>
       </section>
@@ -50,10 +66,37 @@
               <th>Name</th>
               <th>Age</th>
               <th>Department</th>
+              <th>University</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
+      </section>
+
+      <!-- *********Update Student Section********* -->
+      <section id="updateStudents" class="page-section">
+        <h2>Update Student</h2>
+        <form id="updateStudentForm">
+          <label for="updateName">Name:</label>
+          <input type="text" id="updateName" name="updateName" required />
+          <label for="updateAge">Age:</label>
+          <input type="number" id="updateAge" name="updateAge" required />
+          <label for="updateDepartment">Department:</label>
+          <input type="text" id="updateDepartment" name="updateDepartment" required/>
+          <label for="updateUniversity">University:</label>
+          <input type="text" id="updateUniversity" name="updateUniversity" required />
+          <button type="submit">Update Student</button>
+        </form>
+      </section>
+
+      <!-- *********Delete Student Section********* -->
+      <section id="deleteStudents" class="page-section">
+        <h2>Delete Student</h2>
+        <form id="deleteStudentForm">
+          <label for="deleteStudent">ID:</label>
+          <input type="text" id="deleteStudent" name="deleteStudent" required />
+          <button type="submit">Delete Student</button>
+        </form>
       </section>
     </main>
 
